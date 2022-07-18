@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Scheme Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <main class="generator">
+            <div class="form">
+                <input type="color" name="seed" id="seed">
+                <select name="colors" id="colors">
+                    <option value="monochrome" name="monochrome">Monochrome</option>
+                    <option value="monochrome-dark" name="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light" name="monochrome-light">Monochrome-light</option>
+                    <option value="analogic" name="analogic">Analogic</option>
+                    <option value="complement" name="complement">Complement</option>
+                    <option value="analogic-complement" name="analogic-complement">Analogic-complement</option>
+                    <option value="triad" name="triad">Triad</option>
+                    <option value="quad" name="quad">Quad</option>
+                </select>
+                <button onclick="showColors()" id="color-btn">Get color scheme</button>
+            </div>
+            <section>
+                <div class="color-col">
+                    <div class="color-disp" onclick="copyText(0)"></div>
+                    <p class="color-hex" onclick="copyText(0)"></p>
+                </div>
+                <div class="color-col">
+                    <div class="color-disp" onclick="copyText(1)"></div>
+                    <p class="color-hex" onclick="copyText(1)"></p>
+                </div>
+                <div class="color-col">
+                    <div class="color-disp" onclick="copyText(2)"></div>
+                    <p class="color-hex" onclick="copyText(2)"></p>
+                </div>
+                <div class="color-col">
+                    <div class="color-disp" onclick="copyText(3)"></div>
+                    <p class="color-hex" onclick="copyText(3)"></p>
+                </div>
+                <div class="color-col">
+                    <div class="color-disp" onclick="copyText(4)"></div>
+                    <p class="color-hex" onclick="copyText(4)"></p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
