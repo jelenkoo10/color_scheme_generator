@@ -77,3 +77,19 @@ section {
         width: 80%;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .form {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    #colors {
+        width: 40%;
+    }
+
+    #color-btn {
+        font-size: x-small;
+    }
+
+}
